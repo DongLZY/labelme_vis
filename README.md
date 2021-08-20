@@ -6,3 +6,15 @@ Labelme是一个图形化的图片标注工具。此代码在其基础上增加�
 <h1 align="center">
   <img src="sendpix16.jpg"><br/>
 </h1>
+
+## Requirements
+```bash
+imgviz 
+matplotlib 
+numpy
+Pillow
+PyQt5
+PyYAML
+QtPy
+termcolor
+```
