@@ -1047,7 +1047,6 @@ class MainWindow(QtWidgets.QMainWindow):
                 ),
             )
             return
-        print(visi)
         shape.label = text
         shape.flags = flags
         shape.group_id = group_id
@@ -1055,7 +1054,6 @@ class MainWindow(QtWidgets.QMainWindow):
         if shape.group_id is None:
             item.setText("{} ({})".format(shape.label, shape.visi))
         else:
-            print(shape.visi)
             item.setText("{} ({})({})".format(shape.label, shape.visi, shape.group_id))
 
         self.setDirty()
