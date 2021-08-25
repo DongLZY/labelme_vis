@@ -255,7 +255,6 @@ class LabelDialog(QtWidgets.QDialog):
         if move:
             self.move(QtGui.QCursor.pos())
         if self.exec_():
-            print("getVis", self.getVisi())
             return self.edit.text(), self.getFlags(), self.getGroupId(), self.getVisi()
         else:
             return None, None, None, None
