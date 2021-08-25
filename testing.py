@@ -18,7 +18,7 @@ def assert_labelfile_sanity(filename):
         assert osp.exists(img_file)
         img = imgviz.io.imread(img_file)
     else:
-        img = labelme.utils.img_b64_to_arr(imageData)
+        img = utils.img_b64_to_arr(imageData)
 
     H, W = img.shape[:2]
     assert H == data["imageHeight"]
